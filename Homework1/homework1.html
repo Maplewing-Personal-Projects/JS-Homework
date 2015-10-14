@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript實驗</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		輸入：<input type="text" id="number" />
+		<button id="cal">運算</button><br />
+		加1後的結果：<input type="text" id="result" />
+		
+		<script>
+			document.getElementById("cal").addEventListener("click", function(event){
+				var a = parseInt(document.getElementById("number").value);
+				var result = document.getElementById("result");
+				
+				result.value = (a+1).toString();
+			});
+		
+		</script>
+		
+	</body>
+</html>
