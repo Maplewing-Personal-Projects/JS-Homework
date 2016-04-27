@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>To Markus</title>
+		<script src="MarkusConverter.js"></script>
+		<script>
+			window.addEventListener("load", function(){
+				var inputElement = document.getElementById("input");
+				var outputElement = document.getElementById("output");
+				var inputformatElement = document.getElementById("inputFormat");
+				var outputformatElement = document.getElementById("outputFormat");
+				var convertButton = document.getElementById("convertButton");
+
+				convertButton.addEventListener("click", function(){
+					outputElement.value = (new MarkusConverter(inputElement.value))[inputformatElement.value + "ConvertTo" + outputformatElement.value]();
+				});
+			});
+
+		</script>
+	</head>
+	<body>
+		<div>
+			<label for="input">輸入：</label><br />
+			<textarea id="input" rows="20" cols="150"></textarea>
+		</div>
+		<div>
+			<label for="inputFormat">輸入格式：</label>
+			<select id="inputFormat">
+				<option value="plainText">純文字</option>
+				<option value="markus">Markus XHTML</option>
+				<option value="STAML">STAML</option>
+			</select>
+		</div>
+		<div>
+			<label for="outputFormat">輸出格式：</label>
+			<select id="outputFormat">
+				<option value="Markus">Markus XHTML</option>
+				<option value="STAML">STAML</option>
+			</select>
+		</div>
+		<button id="convertButton">轉換</button>
+		<div>
+			<label for="output">輸出：</label><br />
+			<textarea id="output" rows="20" cols="150"></textarea>
+		</div>
+	</body>
+</html>

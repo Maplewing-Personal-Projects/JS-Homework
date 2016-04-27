@@ -1,0 +1,197 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	/* 
+	background-image: linear-gradient(rgb(188, 143, 50), rgb(188, 133, 133));
+	background-repeat: repeat-x;
+	*/
+}
+header{
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 10px 0px;
+	background-color: rgb(250, 250, 250);
+	background-image: linear-gradient(rgb(255, 255, 255), rgb(242, 242, 242));
+	background-repeat: repeat-x;
+	border-bottom-color: rgb(212, 212, 212);
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(212, 212, 212);
+	border-left-style: solid;
+	border-left-width: 0px;
+	border-right-color: rgb(212, 212, 212);
+	border-right-style: solid;
+	border-right-width: 0px;
+	border-top-color: rgb(212, 212, 212);
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-top-style: solid;
+	border-top-width: 0px;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 10px 0px;
+	color: rgb(51, 51, 51);
+	text-align: center;
+}
+
+h1{
+	margin-bottom: 0px;
+}
+
+h5 {
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+
+.middle{
+	padding: 10px;
+	width: 1000px;
+	margin: auto;
+}
+
+.middle img.float{
+	float: left;
+	
+	width: 354px;
+	height: 500px;
+	margin-top: 20px;
+	-webkit-transition: 0.5s ease-out height, 0.5s ease-out width, 0.5s ease-out margin-top;
+	transition: 0.5s ease-out height, 0.5s ease-out width, 0.5s ease-out margin-top;
+}
+
+.middle img.float:hover{
+	width: 400px;
+	height: 150%;
+	margin-top: -40px;
+}
+
+.middle p, .middle ol{
+	margin: 6px;
+}
+
+.left{
+	float: left;
+	padding: 20px;
+	padding-left: 50px;
+	width: 525px;
+	text-align: left;
+	text-indent: 2em;
+}
+
+.left ol li{
+	text-align: left;
+	text-indent: 0;
+}
+
+.left p{
+	text-align: left;
+}
+
+button {
+	-webkit-appearance: none;
+	-webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	-webkit-writing-mode: horizontal-tb;
+	align-items: flex-start;
+	background-color: rgb(0, 109, 204);
+	background-image: linear-gradient(rgb(0, 136, 204), rgb(0, 68, 204));
+	background-repeat: repeat-x;
+	border-bottom-color: rgba(0, 0, 0, 0.247059);
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgba(0, 0, 0, 0.0980392);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: rgba(0, 0, 0, 0.0980392);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: rgba(0, 0, 0, 0.0980392);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+	box-sizing: border-box;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 30px;
+	letter-spacing: normal;
+	line-height: 20px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 4px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 4px;
+	text-align: center;
+	text-indent: 0px;
+	text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
+	text-transform: none;
+	vertical-align: middle;
+	white-space: pre;
+	word-spacing: 0px;
+	writing-mode: lr-tb;
+}
+
+button:hover{
+  background-color: rgb(0, 0, 0);
+  background-image: none;
+}
+
+.introduce{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	/* text-align: center; */
+	width: 400px;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+a {
+	color: #5487FE;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FE8754;
+}
+
+footer{
+	background-color: rgb(204, 204, 204);
+	bottom: 0px;
+	color: rgb(51, 51, 51);
+	display: block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	height: 35px;
+	left: 0px;
+	line-height: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	position: fixed;
+	right: 0px;
+	text-align: center;
+	z-index: 1030;
+}
